@@ -10,10 +10,12 @@ public class DemoApplication {
 		
 		
 		//get the bean from Spring container
-		Coach theCoach = applicationContext.getBean("thatSillyCoach",Coach.class);
+		Coach theCoach = applicationContext.getBean("tennisCoach",Coach.class);
 		
 		//call a method on the bean
 		System.out.println(theCoach.getDailyWorkout());
+		
+		System.out.println(theCoach.getDailyFortune());
 		
 		//close the context
 		applicationContext.close();
