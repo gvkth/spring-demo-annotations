@@ -2,9 +2,11 @@ package com.luv2code.springdemo;
 
 import java.util.Random;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope("prototype")
 public class RandomService implements FortuneService {
 
 	String[] dataFortune = {
