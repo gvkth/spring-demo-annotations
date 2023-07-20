@@ -7,7 +7,7 @@ public class JavaConfigDemoApp {
 
 	public static void main(String[] args) {
 		//read spring config file
-		AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(SportConfig.class);
+		AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext( SportConfig.class);
 		
 		
 		//get the bean from Spring container
